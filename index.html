@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Quem é esse Pokémon?</h1>
+        <div id="poke-img-div">
+            <img id="poke-img">
+        </div>
+        <div class="input-div">
+            <input type="text" id="poke-input" placeholder="Digite o nome do Pokémon">
+            <p id="misses">Tentativas erradas: 0</p>
+        </div>
+        <button onclick="guessPokemon()" id="poke-btn">Enviar</button>
+        <button onclick="tryAgain()" id="try-again-btn">Novamente</button>
+    </body>
+    <script src="javascript/script.js"></script>
+</html>
