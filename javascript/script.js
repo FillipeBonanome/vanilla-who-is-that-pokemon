@@ -29,15 +29,19 @@ async function fetchPokemon(pokemonId) {
 
 //Função para exibir a imagem do Pokémon como silhueta
 async function displayPokemonImage(sillouette = true) {
-    pokemonData = await fetchPokemon(pokemonId);
-    pokeImg.src = pokemonData.sprites.front_default;
+    try {
+        pokemonData = await fetchPokemon(pokemonId);
+        pokeImg.src = pokemonData.sprites.front_default;
 
-    if (sillouette) {
-        pokeImg.style.filter = 'brightness(0) contrast(0) invert(1)';
-    } else {
-        pokeImg.style.filter = '';
-    }
+        if (sillouette) {
+            pokeImg.style.filter = 'brightness(0) contrast(0) invert(1)';
+        } else {
+            pokeImg.style.filter = '';
+        }
     return;
+    } catch (error) {
+        console.log('Erro ao exibir a imagem do Pokémon:', error);
+    }
 }
 
 function guessPokemon() {
