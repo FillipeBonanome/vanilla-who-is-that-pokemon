@@ -38,10 +38,10 @@ async function displayPokemonImage(sillouette = true) {
         } else {
             pokeImg.style.filter = '';
         }
-    return;
     } catch (error) {
         console.log('Erro ao exibir a imagem do Pokémon:', error);
     }
+    return;
 }
 
 function guessPokemon() {
