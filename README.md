@@ -14,7 +14,7 @@ Esse é um pequeno jogo que utiliza a API [Poké API](https://pokeapi.co) onde o
 ## Como inicializar o projeto
 1. Baixe ou clone o repositório utilizando o bash abaixo:
 ```bash
-    git https://github.com/FillipeBonanome/vanilla-who-is-that-pokemon.git
+    git clone https://github.com/FillipeBonanome/vanilla-who-is-that-pokemon.git
 ```
 2. Abra o arquivo index.html no seu navegador
 3. Seja feliz! :duck:
