@@ -21,6 +21,7 @@ async function fetchPokemon(pokemonId) {
 
         const data = await response.json();
         return data;
+        
     } catch (error) { 
         console.log('Erro ao buscar dados do Pokémon:', error);
     }
